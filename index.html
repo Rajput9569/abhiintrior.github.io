@@ -1,43 +1,59 @@
-<!DOCTYPE html>
+<!DOCTYPE html> mail.com
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Aatharv Interior</title>
+    <title>ABHI INTERIOR - Best Interior Design Company</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ABHI INTERIOR - Crafting timeless interiors with simplicity & excellence. Residential, commercial, hospitality & ed-tech interiors.">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header>
-        <div class="logo">AATHARV INTERIOR</div>
+        <div class="logo">
+            <svg width="50" height="50" viewBox="0 0 50 50">
+                <rect x="5" y="20" width="40" height="25" fill="none" stroke="#d4af37" stroke-width="2"/>
+                <rect x="10" y="25" width="12" height="8" fill="#d4af37"/>
+                <rect x="28" y="25" width="12" height="8" fill="#d4af37"/>
+                <rect x="18" y="33" width="14" height="12" fill="none" stroke="#d4af37" stroke-width="2"/>
+                <circle cx="25" cy="39" r="2" fill="#d4af37"/>
+                <path d="M25 5 L25 20 M15 10 L25 5 L35 10" fill="none" stroke="#d4af37" stroke-width="2"/>
+            </svg>
+            <span>ABHI<br>INTERIOR</span>
+        </div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Gallery</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
         </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
 
     <!-- HERO SLIDER -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="slides">
-            <img src="image/hero1.jpg">
-            <img src="image/hero2.jpg">
-            <img src="image/hero3.jpg">
+            <img src="image/hero1.jpg" alt="Modern Interior Design">
+            <img src="image/hero2.jpg" alt="Luxury Home Interiors">
+            <img src="image/hero3.jpg" alt="Commercial Space Design">
         </div>
 
         <div class="hero-content">
-            <h1>Modern Interior & Design</h1>
-            <p>Designs for Every Budget</p>
+            <h1>Transform Your Space Into A Masterpiece</h1>
+            <p>Premium Interior Design Solutions for Homes & Offices</p>
 
-            <form>
-                <input type="text" placeholder="Full Name" required>
-                <input type="text" placeholder="Phone Number" required>
-                <input type="email" placeholder="Email Address" required>
-                <button type="submit">Send me updates on WhatsApp</button>
+            <form id="whatsappForm">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <button type="submit"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</button>
             </form>
         </div>
     </section>
@@ -45,49 +61,182 @@
     <!-- FEATURES -->
     <section class="features">
         <div class="card">
-            <img src="image/aesthetic.jpg">
+            <img src="image/aesthetic.jpg" alt="Aesthetic Interior Design">
             <h3>Aesthetic Appeal</h3>
-            <p>Visually stunning and emotionally engaging spaces.</p>
+            <p>Visually stunning and emotionally engaging spaces that reflect your personality.</p>
         </div>
         <div class="card">
-            <img src="image/quality.jpg">
+            <img src="image/quality.jpg" alt="Quality Materials">
             <h3>Quality & Function</h3>
-            <p>High-quality materials with smart layouts.</p>
+            <p>High-quality materials with smart layouts for maximum functionality.</p>
         </div>
         <div class="card">
-            <img src="image/personalized.jpg">
+            <img src="image/personalized.jpg" alt="Personalized Design">
             <h3>Personalized Experience</h3>
-            <p>Designs tailored to your lifestyle.</p>
+            <p>Designs uniquely tailored to your lifestyle and preferences.</p>
         </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="about">
-        <h2>AATHARV INTERIOR</h2>
-        <p>
-            Crafting timeless interiors with simplicity & excellence. Residential, commercial, hospitality & ed-tech interiors.
-        </p>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>Welcome to ABHI INTERIOR</h2>
+            <div class="about-line"></div>
+            <p>
+                At ABHI INTERIOR, we believe that great design transforms the way you live. With years of expertise in crafting timeless interiors, we bring simplicity and excellence to every project we undertake.
+            </p>
+            <p>
+                From residential sanctuaries to commercial workspaces, hospitality venues to modern educational institutions - we design spaces that inspire.
+            </p>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="counter">500+</span>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat">
+                    <span class="counter">8+</span>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat">
+                    <span class="counter">100%</span>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-line"></div>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="image/residential.jpg" alt="Residential Interiors">
+                <i class="fas fa-home"></i>
+                <h3>Residential</h3>
+                <p>Beautiful home interiors designed to match your lifestyle and preferences.</p>
+            </div>
+            <div class="service-card">
+                <img src="image/commercial.jpg" alt="Commercial Interiors">
+                <i class="fas fa-building"></i>
+                <h3>Commercial</h3>
+                <p>Professional office spaces that boost productivity and leave impressions.</p>
+            </div>
+            <div class="service-card">
+                <img src="image/hospitality.webp" alt="Hospitality Interiors">
+                <i class="fas fa-hotel"></i>
+                <h3>Hospitality</h3>
+                <p>Elegant hotels and restaurants that create memorable experiences.</p>
+            </div>
+            <div class="service-card">
+                <img src="image/edtech.jpg" alt="Ed-Tech Interiors">
+                <i class="fas fa-school"></i>
+                <h3>Ed-Tech</h3>
+                <p>Modern educational spaces designed for optimal learning environments.</p>
+            </div>
     </section>
 
     <!-- PROJECT GALLERY -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h2>Our Projects</h2>
+        <div class="gallery-line"></div>
         <div class="gallery-grid">
-            <img src="image/project1.jpg">
-            <img src="image/project2.jpg">
-            <img src="image/project3.jpg">
-            <img src="image/project4.jpg">
+            <img src="image/project1.jpg" alt="Project 1">
+            <img src="image/project2.jpg" alt="Project 2">
+            <img src="image/project3.jpg" alt="Project 3">
+            <img src="image/project4.jpg" alt="Project 4">
         </div>
     </section>
 
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-line"></div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Noida Sector 63, UP</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+91 9140448240</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>abhiinterior@gmail.com</p>
+                </div>
+                <form id="contactFormWhatsApp" class="contact-form">
+                    <input type="text" id="contactName" placeholder="Your Name" required>
+                    <input type="tel" id="contactPhone" placeholder="Phone Number" required>
+                    <textarea id="contactMessage" placeholder="Tell us about your project..." rows="5"></textarea>
+                    <button type="submit"><i class="fab fa-whatsapp"></i> Send on WhatsApp</button>
+                </form>
+            </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Aatharv Interior. All Rights Reserved.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg width="40" height="40" viewBox="0 0 50 50">
+                    <rect x="5" y="20" width="40" height="25" fill="none" stroke="#d4af37" stroke-width="2"/>
+                    <rect x="10" y="25" width="12" height="8" fill="#d4af37"/>
+                    <rect x="28" y="25" width="12" height="8" fill="#d4af37"/>
+                    <rect x="18" y="33" width="14" height="12" fill="none" stroke="#d4af37" stroke-width="2"/>
+                    <circle cx="25" cy="39" r="2" fill="#d4af37"/>
+                    <path d="M25 5 L25 20 M15 10 L25 5 L35 10" fill="none" stroke="#d4af37" stroke-width="2"/>
+                </svg>
+                <span>ABHI INTERIOR</span>
+            </div>
+            <p>Crafting timeless interiors with simplicity & excellence.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 ABHI INTERIOR. All Rights Reserved.</p>
+            </div>
     </footer>
 
     <!-- WHATSAPP BUTTON -->
-    <a href="https://wa.me/917827405397" class="whatsapp" target="_blank">💬</a>
+    <a href="https://wa.me/919140448240" class="whatsapp" target="_blank" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
+    <script>
+        // Hero Form - Direct WhatsApp Redirect
+        document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+
+            const message = `*New Inquiry from ABHI INTERIOR Website*%0A%0A👤 Name: ${name}%0A📞 Phone: ${phone}%0A📧 Email: ${email}%0A%0APlease contact me regarding interior design services.`;
+
+            window.open(`https://wa.me/919140448240?text=${message}`, '_blank');
+            this.reset();
+        });
+
+        // Contact Form - Direct WhatsApp Redirect
+        document.getElementById('contactFormWhatsApp').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('contactName').value;
+            const phone = document.getElementById('contactPhone').value;
+            const message = document.getElementById('contactMessage').value;
+
+            const whatsappMessage = `*New Inquiry from ABHI INTERIOR Website*%0A%0A👤 Name: ${name}%0A📞 Phone: ${phone}%0A💬 Message: ${message}%0A%0APlease contact me regarding interior design services.`;
+
+            window.open(`https://wa.me/919140448240?text=${whatsappMessage}`, '_blank');
+            this.reset();
+        });
+
+        // Mobile Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
